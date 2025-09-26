@@ -11,7 +11,39 @@ all fresh items at your door step
         #sidebar {
             width: 200px; background: #292b2c; color: #fff; padding: 30px 10px; min-height:100vh;
             display:flex; flex-direction:column; gap: 20px;
-        }
+        }function submitOrder() {
+    const name = document.getElementById('name').value.trim();
+    const mobile = document.getElementById('mobile').value.trim();
+    const order = document.getElementById('order').value.trim();
+    const address = document.getElementById('address').value.trim();
+
+    if (!name) {
+        alert('Please enter your name.');
+        return;
+    }
+    if (!mobile || !/^\d{10}$/.test(mobile)) {
+        alert('Please enter a valid 10-digit mobile number.');
+        return;
+    }
+    if (!order) {
+        alert('Please enter your order details.');
+        return;
+    }
+    if (!address) {
+        alert('Please enter your delivery address.');
+        return;
+    }
+
+    document.getElementById('order-list').innerHTML = `
+        <strong>Order Details:</strong><br>
+        Name: ${name}<br>
+        Mobile: ${mobile}<br>
+        Order: ${order}<br>
+        Address: ${address}
+    `;
+
+    showSection('orders');
+}
         #sidebar button {function submitOrder() {
     const name = document.getElementById('name').value.trim();
     const mobile = document.getElementById('mobile').value.trim();
