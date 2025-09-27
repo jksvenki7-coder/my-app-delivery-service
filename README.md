@@ -7,14 +7,33 @@ all fresh items at your door step
     <title>Freshfoods Dashboard</title>
     <style>
         body { font-family: Arial, sans-serif; margin:0; background:#f5f6fa; }
-        #container { display: flex; min-height:100vh;}
-        #sidebar {
+        #container { display: flex; min-height:100vh;}![931f6fe4-0dc2-4822-85ba-c29874da9a12](https://github.com/user-attachments/assets/29f13d0f-6c5c-44fb-81cd-5d68d71fb7b6)
+
+        #sidebar {![a215100a-f407-4e09-89dc-83a4e41cc2bf](https://github.com/user-attachments/assets/1a882c62-6e22-4395-9818-3fac4e235b8a)
+
             width: 200px; background: #292b2c; color: #fff; padding: 30px 10px; min-height:100vh;
             display:flex; flex-direction:column; gap: 20px;
         }function submitOrder() {
     const name = document.getElementById('name').value.trim();
-    const mobile = document.getElementById('mobile').value.trim();
-    const order = document.getElementById('order').value.trim();
+    const mobile = document.getElementById('mobile').value.trim();![02fcaa6a-5839-404f-98e1-ba7b69a8231a](https://github.com/user-attachments/assets/a1afa05d-6ec9-462b-b1aa-9e62f52afb9b)
+
+    const order = document.getElementById('order').value.trim();<div class="subcategory" id="groceries">
+  <h3>Groceries</h3>
+  <div style="display: flex; gap: 20px;">
+    <div>
+      <img src="02fcaa6a-5839-404f-98e1-ba7b69a8231a.jpg" alt="Product 1" style="width:100px;height:100px;">
+      <p>Product Name 1</p>
+    </div>
+    <div>
+      <img src="9316ffe4-0dc2-4822-85ba-c29874da9a12.jpg" alt="Product 2" style="width:100px;height:100px;">
+      <p>Product Name 2</p>
+    </div>
+    <div>
+      <img src="a215100a-f407-4e09-89dc-83a4e41cc2bf.jpg" alt="Product 3" style="width:100px;height:100px;">
+      <p>Product Name 3</p>
+    </div>
+  </div>
+</div>
     const address = document.getElementById('address').value.trim();
 
     if (!name) {
